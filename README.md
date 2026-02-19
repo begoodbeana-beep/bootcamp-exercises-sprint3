@@ -83,7 +83,7 @@ ________________________________________________________________________________
 
 Level 3
 
-Excersise 1 - Organize the database and establish the connections (Foreign Keys) required by the marketing department's diagram - Queries created and saved in sprint3n3e1.sql
+Excersise 1 - Organize the database and establish the connections (Foreign Keys) required by the marketing department's diagram - Queries created and saved in sprint3n3e1.sql - Diagram create and saved in diagramanivel3.png
 
 Step-by-Step Tasks:
 - Table Selection: First, I selected the active database using the USE transactions; command to ensure all changes were applied to the correct place.
