@@ -4,8 +4,8 @@ Exercise 1 – Create credit_card Table and Relationships - Queries created and 
 
 - Table created: credit_card
 - Relationship created between:
-   1.1 credit_card and company
-   1.2 transaction and credit_card
+   1.1. credit_card and company
+   1.2. transaction and credit_card
 - Commands executed:
        CREATE TABLE credit_card
        ALTER TABLE transaction ADD FOREIGN KEY
@@ -33,8 +33,8 @@ Exercise 3 – Insert New Transaction with Foreign Keys - Queries created and sa
 Initial insert failed due to foreign key constraints.
 
 - Steps performed:
-  1 Created missing company (b-9999)
-  2 Created missing credit card (CcU-9999)
+  1. Created missing company (b-9999)
+  2. Created missing credit card (CcU-9999)
 
 Inserted transaction successfully. Demonstrated understanding of referential integrity and foreign key dependencies.
 
@@ -60,10 +60,10 @@ Record successfully removed.
 Exercise 2 – Create Marketing View - Queries created and saved in sprint3n2e2.sql
 
 - Created view VistaMarketing including: 
-  1 company_name
-  2 phone
-  3 country
-  4 average_purchase (AVG amount)
+  1. company_name
+  2. phone
+  3. country
+  4. average_purchase (AVG amount)
 
 - Used:
   JOIN between company and transaction
