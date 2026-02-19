@@ -1,3 +1,84 @@
+Level 1
+
+Exercise 1 – Create credit_card Table and Relationships - Queries created and saved in sprint3n1e1.sql
+
+- Table created: credit_card
+- Relationship created between:
+   1.1 credit_card and company
+   1.2 transaction and credit_card
+- Commands executed:
+       CREATE TABLE credit_card
+       ALTER TABLE transaction ADD FOREIGN KEY
+
+Schema diagram updated showing: diagramacreditcard.png
+All tables connected with foreign keys.
+
+Exercise 2 – Update Credit Card IBAN - Queries created and saved in sprint3n1e2.sql
+
+Corrected IBAN for credit card ID CcU-2938.
+
+- Update executed:
+  UPDATE credit_card SET iban = 'TR323456312213576817699999'
+
+- Validation:
+  SELECT statement used to confirm the change
+
+Change successfully applied and verified.
+
+Exercise 3 – Insert New Transaction with Foreign Keys - Queries created and saved in sprint3n1e3.sql
+
+- Inserted new transaction:
+  ID: 108B1D1D-5B23-A76C-55EF-C568E49A99DD
+
+Initial insert failed due to foreign key constraints.
+
+- Steps performed:
+  1 Created missing company (b-9999)
+  2 Created missing credit card (CcU-9999)
+
+Inserted transaction successfully. Demonstrated understanding of referential integrity and foreign key dependencies.
+
+Exercise 4 – Remove Column from Table - Queries created and saved in sprint3n1e4.sql
+
+- Removed column pan from table credit_card.
+  Command executed:
+       ALTER TABLE credit_card
+       DROP COLUMN pan
+- Structure verified using DESCRIBE statement.
+_____________________________________________________________________________________
+
+Level 2
+
+Exercise 1 – Delete Transaction - Queries created and saved in sprint3n2e1.sql
+
+- Deleted record with ID: 000447FE-B650-4DCF-85DE-C7ED0EE1CAAD
+  Command executed:
+    DELETE FROM transaction WHERE id = '000447FE-B650-4DCF-85DE-C7ED0EE1CAAD'
+
+Record successfully removed.
+
+Exercise 2 – Create Marketing View - Queries created and saved in sprint3n2e2.sql
+
+- Created view VistaMarketing including: 
+  1 company_name
+  2 phone
+  3 country
+  4 average_purchase (AVG amount)
+
+- Used:
+  JOIN between company and transaction
+  GROUP BY
+  ORDER BY average descending
+
+View saved and validated with SELECT.
+
+Exercise 3 – Filter View by Country - Queries created and saved in sprint3n2e3.sql
+
+- Filtered VistaMarketing to show only companies located in Germany.
+- Query executed:
+   SELECT * FROM VistaMarketing WHERE country = 'Germany'
+
+Results returned only German companies.
 ______________________________________________________________________________________________________________________
 
 Level 3
