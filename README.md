@@ -7,8 +7,8 @@ Exercise 1 – Create credit_card Table and Relationships - Queries created and 
    1. credit_card and company
    2. transaction and credit_card
 - Commands executed:
-       CREATE TABLE credit_card
-       ALTER TABLE transaction ADD FOREIGN KEY
+       CREATE TABLE credit_card;
+       ALTER TABLE transaction ADD FOREIGN KEY;
 
 Schema diagram updated showing: diagramacreditcard.png
 All tables connected with foreign keys.
@@ -42,8 +42,8 @@ Exercise 4 – Remove Column from Table - Queries created and saved in sprint3n1
 
 - Removed column pan from table credit_card.
   Command executed:
-       ALTER TABLE credit_card
-       DROP COLUMN pan
+       ALTER TABLE credit_card;
+       DROP COLUMN pan;
 - Structure verified using DESCRIBE statement.
 _____________________________________________________________________________________
 
