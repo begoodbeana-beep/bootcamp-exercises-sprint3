@@ -6,6 +6,8 @@ Exercise 1 – Create credit_card Table and Relationships - Queries created and 
 - Relationship created between:
    1. credit_card and company
    2. transaction and credit_card
+   3. company and transaction
+   
 - Commands executed:
        CREATE TABLE credit_card;
        ALTER TABLE transaction ADD FOREIGN KEY;
